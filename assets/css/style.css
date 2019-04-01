@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Risque:100,200,300,400,500,600,700|Acme:100,200,300,400,500,600,700');
+
+/*------------------------------------ Color */
+
+.ui-menu-color-home {
+    background-color: #ED6119;
+}
+
+.ui-menu-color-news {
+    background-color: #343759;
+}
+
+.ui-menu-color-music {
+    background-color: #c54c4c;
+}
+
+.ui-menu-color-book-us {
+    background-color: #bbad0e;
+}
+
+/*------------------------------------ Special Rules etc. */
+
+h1,
+h2,
+h3,
+h5 {
+    margin: 0;
+    font-family: Risque, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/*------------------------------------ Header */
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url("../images/logo.png") no-repeat 99% center, linear-gradient(to right, #D9D9D9 50%, #F1F1F1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 360px;
+    border: thick double #ED6119;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.monkees-picture {
+    background: url("../images/monkees-band.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: thick double #ED6119;
+    min-height: 360px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    font-size: 25px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Risque, sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*------------------------------------ Header Hover */
+
+.menucontainer:hover li {
+    opacity: .2;
+    filter: blur(2px);
+    transition: ease-in-out .5s;
+}
+
+.menucontainer li:hover {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/*------------------------------------ Footer */
+
+.footer-picture {
+    background: url("../images/small-monkees-picture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 240px;
+    border: thick double #ED6119;
+}
+
+.footer-text {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: thick double #ED6119;
+    font-family: Acme, sans-serif;
+}
+
+.socialcontainer {
+    margin: 0;
+    padding: 0;
+    border: thick double #ED6119;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.social-links li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.social-links li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    transition: .5s;
+}
+
+.social-links li a i{
+    font-size: 40px;
+    position: relative;
+    padding-top: 20px;
+}
+
+/*------------------------------------ Social Hover */
+
+.social-links li a:hover {
+    color: #fff
+}
+
+.social-links li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s cubic-bezier(.95, .32, .37, 1.31);
+}
+
+.social-links li a:hover:before {
+    transform: scale(1);
+}
+
+.social-links li:nth-child(1) a:hover:before {
+    background: #3b5999;
+}
+
+.social-links li:nth-child(2) a:hover:before {
+    background: #1EA1F3;
+}
+
+.social-links li:nth-child(3) a:hover:before {
+    background: #FF0000;
+}
