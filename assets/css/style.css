@@ -123,17 +123,69 @@ header {
 
 /*------------------------------------ Footer */
 
-.footer-picture {
-    background: url("../images/small-monkees-picture.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 240px;
+.footer-shop {
+    margin: 0;
+    padding: 0;
     border: thick double #ED6119;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-shop li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.footer-shop a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    transition: .5s;
+}
+
+.footer-shop a i{
+    font-size: 40px;
+    position: relative;
+    padding-top: 20px;
+}
+
+/*------------------------------------ Shop Hover */
+
+.footer-shop a:hover {
+    color: #fff
+}
+
+.footer-shop a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s cubic-bezier(.95, .32, .37, 1.31);
+}
+
+.footer-shop a:hover:before {
+    transform: scale(1);
+}
+
+.footer-shop:nth-child(1) a:hover:before {
+    background: #ED6119;
 }
 
 .footer-text {
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     font-size: 20px;
     border: thick double #ED6119;
