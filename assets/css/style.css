@@ -18,6 +18,22 @@
     background-color: #bbad0e;
 }
 
+.border-home {
+    border: thick double #ED6119;
+}
+
+.border-news {
+    border: thick double #343759;
+}
+
+.border-music {
+    border: thick double #c54c4c;
+}
+
+.border-book-us {
+    border: thick double #bbad0e;
+}
+
 /*------------------------------------ Special Rules etc. */
 
 h1,
@@ -28,8 +44,14 @@ h5 {
     font-family: Risque, sans-serif;
 }
 
+h4 {
+    font-family: Acme, sans-serif
+}
+
 p {
     margin: 0;
+    font-family: Acme, sans-serif;
+    font-size: 20px;
 }
 
 /*------------------------------------ Header */
@@ -44,7 +66,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 360px;
-    border: thick double #ED6119;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -56,7 +77,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: thick double #ED6119;
     min-height: 360px;
 }
 
@@ -121,12 +141,23 @@ header {
     filter: blur(0px);
 }
 
-/*------------------------------------ Footer */
+/*------------------------------------ Content */
+
+.side-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/*------------------------------------ Footer Shop */
 
 .footer-shop {
     margin: 0;
     padding: 0;
-    border: thick double #ED6119;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,13 +181,13 @@ header {
     transition: .5s;
 }
 
-.footer-shop a i{
+.footer-shop a i {
     font-size: 40px;
     position: relative;
     padding-top: 20px;
 }
 
-/*------------------------------------ Shop Hover */
+/*------------------------------------ Footer Shop Hover */
 
 .footer-shop a:hover {
     color: #fff
@@ -184,18 +215,19 @@ header {
     background: #ED6119;
 }
 
+/*------------------------------------ Footer Copyright */
+
 .footer-text {
     padding-top: 10px;
     text-align: center;
     font-size: 20px;
-    border: thick double #ED6119;
-    font-family: Acme, sans-serif;
 }
+
+/*------------------------------------ Footer Social */
 
 .socialcontainer {
     margin: 0;
     padding: 0;
-    border: thick double #ED6119;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,13 +257,13 @@ header {
     transition: .5s;
 }
 
-.social-links li a i{
+.social-links li a i {
     font-size: 40px;
     position: relative;
     padding-top: 20px;
 }
 
-/*------------------------------------ Social Hover */
+/*------------------------------------ Footer Social Hover */
 
 .social-links li a:hover {
     color: #fff
