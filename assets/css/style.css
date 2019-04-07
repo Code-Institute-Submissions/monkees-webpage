@@ -34,6 +34,10 @@
     border: thick double #bbad0e;
 }
 
+.picture-border {
+    display: none;
+}
+
 /*------------------------------------ Special Rules etc. */
 
 h1,
@@ -78,6 +82,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
+    display: none;
 }
 
 .list-inline-item:not(:last-child) {
@@ -145,12 +150,85 @@ header {
 
 .side-content {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .main-content {
     text-align: center;
     padding: 20px;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
+/*------------------------------------ Book-Us Form */
+
+.wrapper {
+    background: #fff;
+    font-family: Acme, sans-serif;
+    text-transform: uppercase;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #bbad0e;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+    
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: #bbad0e;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:valid + label,
+.input-field textarea:valid + label{
+    top: -25px;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 2px 5px;
+    background: #bbad0e;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn {
+    margin-top: 20px;
+    background: #bbad0e;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .5s;
+    float: right;
 }
 
 /*------------------------------------ Footer Shop */
@@ -298,3 +376,17 @@ header {
 .social-links li:nth-child(3) a:hover:before {
     background: #FF0000;
 }
+
+@media (min-width: 768px){
+    .monkees-picture{
+        display: block;
+    }
+    .picture-border {
+    display: block;
+    }
+} 
+
+@media(min-width: 992px) {
+    .side-content {
+        min-height: 382px;
+    }
