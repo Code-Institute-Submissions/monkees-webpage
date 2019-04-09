@@ -46,16 +46,18 @@ h3,
 h5 {
     margin: 0;
     font-family: Risque, sans-serif;
+    text-align: center;
 }
 
 h4 {
-    font-family: Acme, sans-serif
+    font-family: Acme, sans-serif;
+    text-align: center;
 }
 
 p {
     margin: 0;
     font-family: Acme, sans-serif;
-    font-size: 20px;
+    font-size: calc(15px + 0.5vw);
 }
 
 /*------------------------------------ Header */
@@ -70,10 +72,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
 }
 
 .monkees-picture {
@@ -155,6 +153,11 @@ header {
 
 .main-content {
     text-align: center;
+    padding: 50px;
+}
+
+.news-content {
+    text-align: justify;
     padding: 50px;
 }
 
