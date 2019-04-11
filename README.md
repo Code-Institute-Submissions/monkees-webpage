@@ -30,14 +30,16 @@ I went through a design process following the steps I learned in User Design Exp
 <li>Google Chrome developer tools</li></ul>
 
 <h3>Deployment</h3>
-Website was coded in Cloud 9 IDE, a local GIT directory was used for version control using commands:
-git init
-git status
-git add . 
+Website was coded in Cloud 9 IDE and can be found at: <a href="https://ide.c9.io/kaidosoo/monkees-webpage" target="_blank">https://ide.c9.io/kaidosoo/monkees-webpage</a>, a local GIT directory was used for version control using commands:
+<ul>
+<li>git init</li>
+<li>git status</li>
+<li>git add . </li></ul>
 and then uploaded to GITHUB using commands:
-git commit -m
-git remote add origin
-git push -u origin master
+<ul>
+<li>git commit -m</li>
+<li>git remote add origin</li>
+<li>git push -u origin master</li></ul>
 Once in a GITHUB repositories it was made live using GITHUB Pages. The website can be found at: <a href="https://kaidoso.github.io/monkees-webpage/"  target="_blank">https://kaidoso.github.io/monkees-webpage/</a>
 
 <h3>Testing</h3>
