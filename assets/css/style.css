@@ -379,6 +379,8 @@ video {
     background: #FF0000;
 }
 
+/*------------------------------------ Media Queries */
+
 @media (min-width: 768px){
     .monkees-picture{
         display: block;
